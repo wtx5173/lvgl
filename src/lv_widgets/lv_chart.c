@@ -282,7 +282,7 @@ void lv_chart_clear_series(lv_obj_t * chart, lv_chart_series_t * series)
  */
 void lv_chart_hide_series(lv_obj_t * chart, lv_chart_series_t * ser, bool hide)
 {
-    LV_ASSERT_OBJ(ser, LV_OBJX_NAME);
+    LV_ASSERT_OBJ(chart, LV_OBJX_NAME);
     LV_ASSERT_NULL(ser);
 
     ser->hidden = hide ? 1 : 0;
